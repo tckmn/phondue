@@ -4507,7 +4507,7 @@
                     <object id='cell_16_17' class='GtkButton'>
                         <property name='visible'>True</property>
                         <property name='relief'>GTK_RELIEF_NONE</property>
-                        <property name='label'>.</property>
+                        <property name='label'>|</property>
                         
                     </object>
                     <packing>

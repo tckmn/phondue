@@ -16,7 +16,7 @@ data = '1|2Bilabial|2Labiodental|2Dental|2Alveolar|2Postalveolar|2Palatal|2Velar
 1Mid       |_|_|ə|_|_|_|_|ʞ|ʼ          |_|ɕ|ʑ   |_|◌ʷ|◌ʲ|◌ᶣ|◌ᶹ|◌ˠ|◌ˤ|◌̴
 1Open-mid  |ɛ|œ|ɜ|ɞ|ʌ|ɔ|_|ɓ|ɗ          |_|ɺ|ɧ   |_|◌̹|◌̜|◌̘|◌̙|◌̃|◌˞
 1Near-open |æ|_|ɐ|_|_|_|_|ᶑ|ʄ          |_|_|_   |_|
-1Open      |a|ɶ|_|_|ɑ|ɒ|_|ɠ|ʛ          |_|2Suprasegmental|ˈ|ˌ|ː|ˑ|◌̆|.|‖|‿
+1Open      |a|ɶ|_|_|ɑ|ɒ|_|ɠ|ʛ          |_|2Suprasegmental|ˈ|ˌ|ː|ˑ|◌̆|BAR|‖|‿
 '
 
 puts "
@@ -44,6 +44,8 @@ data.split("\n").each_with_index do |line, i|
         if cell.bytes[0..2] == [226, 151, 140]
             cell = cell.bytes[3..-1].pack('c*')
         end
+
+        cell = ?| if cell == 'BAR'
 
         is_button = !(grey || empty || label_width)
 
