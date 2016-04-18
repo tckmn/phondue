@@ -17,7 +17,7 @@ data = '
     { non-pulmonics }
     o.ʘ |=ǂ ||ǁ
     b(ɓ d(ɗ j(ʄ ɟ(ʄ g(ɠ ɢ(ʛ
-    ''ʼ
+    \'\'ʼ
 
     { misc. symbols }
     w/ʍ h/ɥ HHʜ ʕ-ʢ ?-ʡ ʔ-ʡ SJɕ ZJʑ RLɺ LRɺ ɾlɺ lɾɺ ʃxɧ xʃɧ
