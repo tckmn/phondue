@@ -1,28 +1,116 @@
 #include <gtk/gtk.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
 
-static void activate(GtkApplication* app, gpointer user_data) {
-    // create main window
-    GtkWidget *win = gtk_application_window_new(app);
-    gtk_window_set_title(GTK_WINDOW(win), "Phondue");
-    gtk_container_set_border_width(GTK_CONTAINER(win), 10);
+#define DEBUG
 
-    // the grid that's used for layout of all the widgets
-    GtkWidget *grid = gtk_grid_new();
-    gtk_container_add(GTK_CONTAINER(win), grid);
+typedef struct {
+    uint64_t code;
+    gunichar replacement;
+} Digraph;
+static Digraph *digraphs;
+#define DIGRAPH_BUF_STEP 100
 
-    gtk_widget_show_all(win);
+static void apply_css(GtkWidget *widget, GtkStyleProvider *provider) {
+    gtk_style_context_add_provider(gtk_widget_get_style_context(widget),
+            provider, G_MAXUINT);
+    if (GTK_IS_CONTAINER(widget)) {
+        gtk_container_forall(GTK_CONTAINER(widget), (GtkCallback)apply_css,
+                provider);
+    }
+}
+
+static void keypress(GtkEntry *input, gpointer user_data) {
+    const gchar *text = gtk_entry_get_text(input);
+    gint cursor = gtk_editable_get_position(GTK_EDITABLE(input));
+
+    // parse letter combinations
+    if (cursor > 0) {
+        // find the two Unicode chars before the cursor
+        gchar *textPos = g_utf8_offset_to_pointer(text, cursor - 1);
+        gunichar ch1 = g_utf8_get_char(textPos);
+        textPos = g_utf8_next_char(textPos);
+        gunichar ch2 = g_utf8_get_char(textPos);
+        textPos = g_utf8_next_char(textPos);
+
+        // encode in a consistent format
+        uint64_t code = ((uint64_t)(ch1) << 32) | ch2;
+
+        gunichar replacement = 0;
+
+        // test with a few special cases and then the digraphs array
+        if (ch1 == '\\') {
+            replacement = ch2;
+        } else {
+            for (Digraph *d = digraphs;; ++d) {
+                if (code == d->code) {
+                    replacement = d->replacement;
+                    break;
+                } else if (code < d->code) break;
+            }
+        }
+
+        if (replacement) {
+#ifdef DEBUG
+            printf("%08x + %08x = %08x\n", ch1, ch2, replacement);
+#endif
+
+            int textLen = strlen(text);
+
+            // just to be safe, let's add a little buffer...
+            gchar *newText = malloc((textLen + 10) * sizeof(gchar));
+            g_utf8_strncpy(newText, text, cursor - 1);
+            gchar *newTextPos = g_utf8_offset_to_pointer(newText, cursor - 1);
+            newTextPos += g_unichar_to_utf8(replacement, newTextPos);
+            g_utf8_strncpy(newTextPos, textPos, textLen - cursor - 1);
+
+            gtk_entry_set_text(input, newText);
+        }
+    }
 }
 
 int main(int argc, char **argv) {
-    // startup
-    GtkApplication *app = gtk_application_new("com.keyboardfire.phondue",
-            G_APPLICATION_FLAGS_NONE);
-    g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
+    gtk_init(&argc, &argv);
 
-    // run
-    int status = g_application_run(G_APPLICATION(app), argc, argv);
+    // load digraph information from file
+    int digraphsBufLen = DIGRAPH_BUF_STEP, digraphsIdx = 0;
+    digraphs = malloc((digraphsBufLen + 1) * sizeof(Digraph));
 
-    // cleanup
-    g_object_unref(app);
-    return status;
+    FILE *dgfp = fopen("src/digraphs.txt", "r");
+
+    uint64_t code;
+    gunichar replacement;
+    while (fscanf(dgfp, "%lx %x\n", &code, &replacement) != EOF) {
+        digraphs[digraphsIdx++] = (Digraph) { code, replacement };
+        if (digraphsIdx > digraphsBufLen) {
+            digraphsBufLen += DIGRAPH_BUF_STEP;
+            digraphs = realloc(digraphs, (digraphsBufLen + 1) * sizeof(Digraph));
+        }
+    }
+    digraphs[digraphsIdx] = (Digraph) { -1, 0 };
+
+    fclose(dgfp);
+
+    // read UI information from file
+    GtkBuilder *builder = gtk_builder_new();
+    gtk_builder_add_from_file(builder, "src/builder.ui", NULL);
+    GObject *win = gtk_builder_get_object(builder, "window");
+
+    // read style information from file
+    GtkCssProvider *provider = gtk_css_provider_new();
+    gtk_css_provider_load_from_path(provider, "src/builder.css", NULL);
+    apply_css(GTK_WIDGET(win), GTK_STYLE_PROVIDER(provider));
+
+    // exit properly when window is closed
+    g_signal_connect(win, "destroy", G_CALLBACK(gtk_main_quit), NULL);
+
+    // attach to "key pressed" signal
+    GObject *input = gtk_builder_get_object(builder, "input");
+    g_signal_connect(input, "changed", G_CALLBACK(keypress), NULL);
+
+    gtk_main();
+
+    return 0;
 }
