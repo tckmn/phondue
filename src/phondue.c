@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#define DEBUG
-
 typedef struct {
     uint64_t code;
     gunichar replacement;
@@ -55,10 +53,6 @@ static void keypress(GtkEntry *input, gpointer user_data) {
         }
 
         if (replacement) {
-#ifdef DEBUG
-            printf("%08x + %08x = %08x\n", ch1, ch2, replacement);
-#endif
-
             int textLen = strlen(text);
 
             // just to be safe, let's add a little buffer...
