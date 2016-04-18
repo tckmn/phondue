@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+cd "$(readlink -f "$(dirname "$(readlink -f "$0")")")"
+exec bin/phondue
