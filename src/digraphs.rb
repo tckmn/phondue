@@ -54,7 +54,7 @@ data = data.gsub(/\{\{[^}]*\}\}/, '').scan(/\S/).each_slice(3).flat_map{|digraph
 }.flat_map{|digraph|
     [digraph, digraph.join.sub(/[a-z]/){|x|x.upcase}.chars].uniq
 }.flat_map{|digraph|
-    digraph.join =~ /[^_><-]/ ? [digraph, [digraph[1], digraph[0], digraph[2]]] : [digraph]
+    digraph.join =~ /[_^><-]/ ? [digraph, [digraph[1], digraph[0], digraph[2]]] : [digraph]
 }
 
 puts data.map{|digraph|
