@@ -11,6 +11,14 @@ data = '
     vOʋ v0ʋ r/ɹ w,ɰ w|ɰ
     y/ʎ LLʟ
 
+    i-ɨ u-ʉ m/ɯ
+    IIɪ YYʏ UUʊ
+    o/ø e-ɘ o-ɵ OXɤ XOɤ
+    e/ə
+    EEɛ OEœ ɛ/ɜ EBɞ ɜ(ɞ OOɞ /\\ʌ c/ɔ
+    AEæ a/ɐ
+    CEɶ o|ɑ a|ɑ AAɑ |oɒ |aɒ ɑ/ɒ
+
     {{ retroflexes }}
     t)ʈ d)ɖ n)ɳ r)ɽ ɾ)ɽ s)ʂ z)ʐ ɹ)ɻ l)ɭ
 
