@@ -73,7 +73,11 @@ static void buttonclick(GtkButton *button, gpointer user_data) {
     // again, some buffer just to be safe...
     char *newText = malloc((textLen + 10) * sizeof(gchar));
     strcpy(newText, text);
-    strcpy(newText + textLen, gtk_button_get_label(button));
+
+    const gchar *label = gtk_button_get_label(button);
+    if (label[0] == '\x25' && label[1] == '\xcc') label += 2;
+    strcpy(newText + textLen, label);
+
     gtk_entry_set_text(input, newText);
     gtk_entry_grab_focus_without_selecting(input);
 }

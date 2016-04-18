@@ -2572,6 +2572,90 @@
                 </child>
 
                 <child>
+                    <object id='cell_9_4' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>7</property>
+                        <property name='width'>1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_9_5' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'>Non-pulmonic</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>8</property>
+                        <property name='width'>2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_9_6' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>10</property>
+                        <property name='width'>1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_9_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'>Other</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>11</property>
+                        <property name='width'>2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_9_8' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>13</property>
+                        <property name='width'>1</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_9_9' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'>Diacritics</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>9</property>
+                        <property name='left-attach'>14</property>
+                        <property name='width'>7</property>
+                    </packing>
+                </child>
+
+                <child>
                     <object id='cell_10_0' class='GtkLabel'>
                         <property name='visible'>True</property>
                         
@@ -2665,6 +2749,188 @@
                     <packing>
                         <property name='top-attach'>10</property>
                         <property name='left-attach'>6</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʘ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ǀ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_11' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʍ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>w</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̥</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̬</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̤</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̰</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̩</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_10_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̯</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>10</property>
+                        <property name='left-attach'>19</property>
                         
                     </packing>
                 </child>
@@ -2768,6 +3034,188 @@
                 </child>
 
                 <child>
+                    <object id='cell_11_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ǃ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ǂ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_11' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɥ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʜ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̪</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̼</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̺</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̻</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʰ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_11_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̚</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>11</property>
+                        <property name='left-attach'>19</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
                     <object id='cell_12_0' class='GtkLabel'>
                         <property name='visible'>True</property>
                         
@@ -2866,6 +3314,188 @@
                 </child>
 
                 <child>
+                    <object id='cell_12_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ǁ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>¡</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_11' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʢ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʡ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̟</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̠</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̈</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̽</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̝</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_12_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̞</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>12</property>
+                        <property name='left-attach'>19</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
                     <object id='cell_13_0' class='GtkLabel'>
                         <property name='visible'>True</property>
                         
@@ -2917,6 +3547,244 @@
                     <packing>
                         <property name='top-attach'>13</property>
                         <property name='left-attach'>3</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_4' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>4</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_5' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>5</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_6' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>6</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʞ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʼ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_11' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɕ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʑ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʷ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʲ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ᶣ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ᶹ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ˠ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ˤ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>19</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_13_20' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̴</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>13</property>
+                        <property name='left-attach'>20</property>
                         
                     </packing>
                 </child>
@@ -3020,6 +3888,188 @@
                 </child>
 
                 <child>
+                    <object id='cell_14_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɓ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɗ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_11' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɺ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɧ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̹</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̜</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̘</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̙</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̃</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_14_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>˞</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>14</property>
+                        <property name='left-attach'>19</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
                     <object id='cell_15_0' class='GtkLabel'>
                         <property name='visible'>True</property>
                         
@@ -3071,6 +4121,146 @@
                     <packing>
                         <property name='top-attach'>15</property>
                         <property name='left-attach'>3</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_4' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>4</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_5' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>5</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_6' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>6</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ᶑ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʄ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_11' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>11</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_12' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>12</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_15_13' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>15</property>
+                        <property name='left-attach'>13</property>
                         
                     </packing>
                 </child>
@@ -3169,6 +4359,188 @@
                     <packing>
                         <property name='top-attach'>16</property>
                         <property name='left-attach'>6</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_7' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>7</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_8' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ɠ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>8</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_9' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ʛ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>9</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_10' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'></property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>10</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_11' class='GtkLabel'>
+                        <property name='visible'>True</property>
+                        
+                        <property name='label'>Suprasegmental</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>11</property>
+                        <property name='width'>2</property>
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_12' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ˈ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>13</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_13' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ˌ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>14</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_14' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ː</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>15</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_15' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>ˑ</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>16</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_16' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>̆</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>17</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_17' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>.</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>18</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_18' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>‖</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>19</property>
+                        
+                    </packing>
+                </child>
+
+                <child>
+                    <object id='cell_16_19' class='GtkButton'>
+                        <property name='visible'>True</property>
+                        <property name='relief'>GTK_RELIEF_NONE</property>
+                        <property name='label'>‿</property>
+                        
+                    </object>
+                    <packing>
+                        <property name='top-attach'>16</property>
+                        <property name='left-attach'>20</property>
                         
                     </packing>
                 </child>

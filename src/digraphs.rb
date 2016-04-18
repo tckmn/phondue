@@ -44,6 +44,9 @@ data = '
     \'\'ˈ ,,ˌ ::ː ː-ˑ ^ŭ_u̮ ͜)‿
     ||‖ /^↗ />↗ \\v↘ \\>↘
     ^"̋ ^\'́ ^-̄ _\'̀ _"̏ 1|˥ 2|˦ 3|˧ 4|˨ 5|˩ +|ꜛ ^v̌ ^^̂ -|ꜜ
+
+    {{ unofficial IPA symbols }}
+    k/ʞ !/¡ ɖ(ᶑ ɗ)ᶑ
 '
 
 data = data.gsub(/\{\{[^}]*\}\}/, '').scan(/\S/).each_slice(3).flat_map{|digraph|
