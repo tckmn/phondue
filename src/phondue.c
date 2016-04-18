@@ -13,6 +13,11 @@ static Digraph *digraphs;
 
 static GtkEntry *input;
 
+static void copy_input_to_clipboard() {
+    gtk_clipboard_set_text(gtk_clipboard_get_default(gdk_display_get_default()),
+            gtk_entry_get_text(input), -1);
+}
+
 static void apply_css(GtkWidget *widget, GtkStyleProvider *provider) {
     gtk_style_context_add_provider(gtk_widget_get_style_context(widget),
             provider, G_MAXUINT);
@@ -65,6 +70,8 @@ static void keypress(GtkEntry *input, gpointer user_data) {
             gtk_entry_set_text(input, newText);
         }
     }
+
+    copy_input_to_clipboard();
 }
 
 static void buttonclick(GtkButton *button, gpointer user_data) {
@@ -80,6 +87,8 @@ static void buttonclick(GtkButton *button, gpointer user_data) {
 
     gtk_entry_set_text(input, newText);
     gtk_entry_grab_focus_without_selecting(input);
+
+    copy_input_to_clipboard();
 }
 
 int main(int argc, char **argv) {
