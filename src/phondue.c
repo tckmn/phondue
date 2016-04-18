@@ -13,6 +13,8 @@ typedef struct {
 static Digraph *digraphs;
 #define DIGRAPH_BUF_STEP 100
 
+static GtkEntry *input;
+
 static void apply_css(GtkWidget *widget, GtkStyleProvider *provider) {
     gtk_style_context_add_provider(gtk_widget_get_style_context(widget),
             provider, G_MAXUINT);
@@ -71,6 +73,17 @@ static void keypress(GtkEntry *input, gpointer user_data) {
     }
 }
 
+static void buttonclick(GtkButton *button, gpointer user_data) {
+    const gchar *text = gtk_entry_get_text(input);
+    int textLen = strlen(text);
+    // again, some buffer just to be safe...
+    char *newText = malloc((textLen + 10) * sizeof(gchar));
+    strcpy(newText, text);
+    strcpy(newText + textLen, gtk_button_get_label(button));
+    gtk_entry_set_text(input, newText);
+    gtk_entry_grab_focus_without_selecting(input);
+}
+
 int main(int argc, char **argv) {
     gtk_init(&argc, &argv);
 
@@ -107,8 +120,19 @@ int main(int argc, char **argv) {
     g_signal_connect(win, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
     // attach to "key pressed" signal
-    GObject *input = gtk_builder_get_object(builder, "input");
+    input = GTK_ENTRY(gtk_builder_get_object(builder, "input"));
     g_signal_connect(input, "changed", G_CALLBACK(keypress), NULL);
+
+    // attach to "button clicked" signals
+    GSList *allObjects = gtk_builder_get_objects(builder), *cursor = allObjects;
+    while (cursor != NULL) {
+        GObject *obj = (GObject*)cursor->data;
+        if (!strcmp("GtkButton", G_OBJECT_TYPE_NAME(obj))) {
+            g_signal_connect(obj, "clicked", G_CALLBACK(buttonclick), NULL);
+        }
+        cursor = cursor->next;
+    }
+    g_slist_free(allObjects);
 
     gtk_main();
 
