@@ -19,7 +19,14 @@ data = '1|2Bilabial|2Labiodental|2Dental|2Alveolar|2Postalveolar|2Palatal|2Velar
 1Open      |a|ɶ|_|_|ɑ|ɒ|_|ɠ|ʛ          |_|2Suprasegmental|ˈ|ˌ|ː|ˑ|◌̆|BAR|‖|‿
 '
 
-puts "
+mode = ARGV.shift
+if (mode != 'gtk' && mode != 'html') || (!ARGV.empty?)
+    abort "usage: #{$0} gtk\n       #{$0} html"
+end
+gtk = mode == 'gtk'
+html = mode == 'html'
+
+if gtk then puts "
 <interface>
     <object id='window' class='GtkWindow'>
         <property name='visible'>True</property>
@@ -29,9 +36,16 @@ puts "
         <child>
             <object id='grid' class='GtkGrid'>
                 <property name='visible'>True</property>"
+elsif html then puts "
+<table>
+    <tbody>"
+end
 
 data.split("\n").each_with_index do |line, i|
     xpos = 0
+    if html then puts "
+        <tr>"
+    end
     line.split(?|).each_with_index do |cell, j|
         cell.strip!
         grey = cell == ?#
@@ -49,12 +63,12 @@ data.split("\n").each_with_index do |line, i|
 
         is_button = !(grey || empty || label_width)
 
-        puts "
+        if gtk then puts "
                 <child>
                     <object id='cell_#{i}_#{j}' class='#{is_button ? 'GtkButton' : 'GtkLabel'}'>
                         <property name='visible'>True</property>
                         #{is_button ? "<property name='relief'>GTK_RELIEF_NONE</property>" : ''}
-                        <property name='label'>#{cell.strip}</property>
+                        <property name='label'>#{cell}</property>
                         #{grey ? "<style><class name='grey'/></style>" : ''}
                     </object>
                     <packing>
@@ -63,12 +77,22 @@ data.split("\n").each_with_index do |line, i|
                         #{label_width ? "<property name='width'>#{label_width}</property>" : ''}
                     </packing>
                 </child>"
+        elsif html then puts "
+            <td id='cell_#{i}_#{j}' class='#{is_button ? 'td-btn' : 'td-lbl'}#{' grey' if grey}'#{" colspan='#{label_width}'" if label_width}>
+                #{'<button>' if is_button}
+                    #{cell}
+                #{'</button>' if is_button}
+            </td>"
+        end
 
         xpos += label_width || 1
     end
+    if html then puts "
+        </tr>"
+    end
 end
 
-puts "
+if gtk then puts "
                 <child>
                     <object id='input' class='GtkEntry'>
                         <property name='visible'>True</property>
@@ -84,3 +108,6 @@ puts "
         </child>
     </object>
 </interface>"
+elsif html then puts "
+</table>"
+end

@@ -1,5 +1,10 @@
 #!/bin/bash
-src/builder.rb > src/builder.ui
-src/digraphs.rb > src/digraphs.txt
+
+# desktop
+tools/builder.rb gtk > src/builder.ui
+tools/digraphs.rb > src/digraphs.txt
 make
-bin/phondue
+
+# web
+tools/builder.rb html > web/builder.html
+tools/digraphs.rb > web/digraphs.txt
