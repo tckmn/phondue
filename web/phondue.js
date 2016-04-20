@@ -1,18 +1,15 @@
 (function() {
-    var inputBox, oldVal = '';
+    var inputBox;
     var keypress = function(e) {
-        var val = inputBox.value;
-        if (val.length > oldVal.length) {
-            // for browsers that don't support selectionStart, too bad,
-            //   digraphs only work at the end
-            var pos = inputBox.selectionStart || val.length;
-            var digraph = digraphs[val.substr(pos - 2, 2)];
-            if (digraph) {
-                val = val.slice(0, pos - 2) + digraph + val.slice(pos);
-                inputBox.value = val;
-            }
+        var val = inputBox.value,
+            key = String.fromCharCode(e.which || e.keyCode),
+            pos = inputBox.selectionStart || val.length,
+            digraph = digraphs[val.substr(pos - 1, 1) + key];
+        if (digraph) {
+            e.preventDefault();
+            val = val.slice(0, pos - 1) + digraph + val.slice(pos);
+            inputBox.value = val;
         }
-        oldVal = val;
     };
 
     var digraphs = {};
@@ -24,7 +21,6 @@
             [].slice.call(document.getElementsByTagName('button'))
                     .forEach(function(btn) {
                 btn.addEventListener('click', function() {
-                    oldVal = inputBox.value += btn.innerText;
                     inputBox.focus();
                 });
             });
@@ -32,7 +28,7 @@
             inputBox = document.createElement('input');
             inputBox.id = 'inputBox';
             inputBox.spellcheck = false;
-            inputBox.addEventListener('keyup', keypress);
+            inputBox.addEventListener('keypress', keypress);
             document.body.appendChild(inputBox);
         });
         builderReq.open('GET', 'builder.html');
@@ -42,8 +38,7 @@
         digraphsReq.addEventListener('load', function() {
             this.responseText.split('\n').forEach(function(digraph) {
                 var chunks = digraph.match(/\S{8}/g);
-                // failsafe
-                if (!chunks || chunks.length != 3) return;
+                if (!chunks || chunks.length != 3) return;  // failsafe
                 chunks = chunks.map(function(hex) {
                     return String.fromCharCode(parseInt(hex, 16));
                 });
