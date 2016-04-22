@@ -42,7 +42,7 @@ These symbols were decided to be intuitive as possible:
         o/ -> ø   e/ -> ə   ɛ/ -> ɜ
         c/ -> ɔ   a/ -> ɐ   ɑ/ -> ɒ
         w/ -> ʍ   h/ -> ɥ   k/ -> ʞ
-        !/ -> ¡
+        !/ -> ¡   v/ -> ʌ
 
     Also note that for any digraph, if either of the two characters that
     compose it are not "standard" letters you can find on your keyboard, the
@@ -157,8 +157,8 @@ These symbols were decided to be intuitive as possible:
 
 - Tonal countours use numbers plus `|`:
 
-        1| -> ˥   2| -> ˦   3| -> ˧
-        4| -> ˨   5| -> ˩   +| -> ꜛ
+        5| -> ˥   4| -> ˦   3| -> ˧
+        2| -> ˨   1| -> ˩   +| -> ꜛ
         -| -> ꜜ
 
 - Finally, some digraphs simply have unique mnemonics:
