@@ -1,11 +1,13 @@
-# Phondue
+# [Phondue](http://keyboardfire.com/phondue-web/)
 
-**An IPA entry tool so good, it's delicious**
+*An IPA entry tool so good, it's delicious*
 
 -----
 
-*Phondue* (pronounced /fɔ̃dy/) is a (hopefully) cross-platform GUI IPA input
-tool with the primary goal of being intuitive and easy to use.
+Phondue (pronounced /fɔ̃dy/) is a tool for input of IPA symbols with the primary
+goal of being intuitive and easy to use.
+
+[**Try Phondue in your browser here!**](http://keyboardfire.com/phondue-web/)
 
 Compile with `make` from the root of the project, and then run by executing the
 `phondue` helper script.
