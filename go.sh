@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # desktop
-tools/builder.rb gtk > src/builder.ui
 tools/digraphs.rb > src/digraphs.txt
+tools/builder.rb gtk > src/builder.ui
 make
 
 # web
-tools/builder.rb html > web/builder.html
 tools/digraphs.rb > web/digraphs.txt
+tools/builder.rb html web/digraphs.txt > web/builder.html

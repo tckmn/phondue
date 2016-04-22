@@ -20,11 +20,26 @@ data = '1|2Bilabial|2Labiodental|2Dental|2Alveolar|2Postalveolar|2Palatal|2Velar
 '
 
 mode = ARGV.shift
+gtk = mode == 'gtk'
+html = mode == 'html'
+
+digraphs = if html
+    digraphs = Hash.new []
+    digraphs_file = ARGV.shift
+    if digraphs_file
+        open(digraphs_file).readlines.map{|line|
+            a, b, c = line.scan(/\S{8}/).map{|code|
+                [code.to_i(16)].pack 'U*'
+            }
+            digraphs[c] += [a + b]
+        }
+    end
+    digraphs
+end
+
 if (mode != 'gtk' && mode != 'html') || (!ARGV.empty?)
     abort "usage: #{$0} gtk\n       #{$0} html"
 end
-gtk = mode == 'gtk'
-html = mode == 'html'
 
 if gtk then puts "
 <interface>
@@ -79,7 +94,7 @@ data.split("\n").each_with_index do |line, i|
                 </child>"
         elsif html then puts "
             <td id='cell_#{i}_#{j}' class='#{is_button ? 'td-btn' : 'td-lbl'}#{' grey' if grey}'#{" colspan='#{label_width}'" if label_width}>
-                #{'<button>' if is_button}
+                #{"<button title='#{(digraphs[cell] * ' ').gsub("'", '&quot')}'>" if is_button}
                     #{cell}
                 #{'</button>' if is_button}
             </td>"

@@ -17,7 +17,7 @@
     window.addEventListener('load', function() {
         var builderReq = new XMLHttpRequest();
         builderReq.addEventListener('load', function() {
-            document.body.innerHTML = this.responseText;
+            document.body.innerHTML += this.responseText;
             [].slice.call(document.getElementsByTagName('button'))
                     .forEach(function(btn) {
                 btn.addEventListener('click', function() {
