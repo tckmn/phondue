@@ -1,5 +1,20 @@
 body {
     font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px 10px;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#subtitle {
+    font-style: italic;
+    margin: 0px;
 }
 
 table {
