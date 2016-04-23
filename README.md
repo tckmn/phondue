@@ -167,3 +167,9 @@ These symbols were decided to be intuitive as possible:
         ((  -> ◌͡◌  two parens for a tie that connects 2 chars
         ))  -> ◌͜◌
         ◌͜◌) -> ‿   one more paren to make it a little bit longer
+
+## Other features
+
+In the desktop version, the contents of the text input box are automatically
+copied to your clipboard whenever they are changed. This means you can type
+some stuff and immediately paste it anywhere without having to manually copy.
