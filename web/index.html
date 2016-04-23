@@ -12,7 +12,163 @@
         <p><a href='https://github.com/KeyboardFire/phondue/blob/master/README.md#usage'>Full description of digraphs</a></p>
         <div id='phondue'></div>
 <!--STARTUSAGE-->
-asdf
+<h2>Usage</h2>
+<p>As seen in the above screenshot, certain symbols of the IPA can be entered by
+clicking on them in the table. However, it is far more efficient to use the
+many keyboard shortcuts that Phondue provides. These are called <strong>digraphs</strong>,
+since they are made up of two letters, and they allow you to type any IPA
+symbol with only a standard keyboard.</p>
+<p>These symbols were decided to be intuitive as possible:</p>
+<ul>
+<li>
+<p>Many symbols that look similar to letters of the English alphabet (such as
+small caps) can be produced by doubling the capital letter:</p>
+<pre><code>  GG -&gt; ɢ   ?? -&gt; ʔ   NN -&gt; ɴ
+  BB -&gt; ʙ   RR -&gt; ʀ   XX -&gt; χ
+  LL -&gt; ʟ   II -&gt; ɪ   YY -&gt; ʏ
+  UU -&gt; ʊ   EE -&gt; ɛ   OO -&gt; ɞ
+  AA -&gt; ɑ   '' -&gt; ˈ   ,, -&gt; ˌ
+  :: -&gt; ː
+</code></pre>
+</li>
+<li>
+<p>The slash is used to &quot;reflect,&quot; &quot;rotate,&quot; or otherwise flip around a given
+symbol:</p>
+<pre><code>  ʀ/ -&gt; ʁ   ʔ/ -&gt; ʕ   ?/ -&gt; ʕ
+  r/ -&gt; ɹ   y/ -&gt; ʎ   m/ -&gt; ɯ
+  o/ -&gt; ø   e/ -&gt; ə   ɛ/ -&gt; ɜ
+  c/ -&gt; ɔ   a/ -&gt; ɐ   ɑ/ -&gt; ɒ
+  w/ -&gt; ʍ   h/ -&gt; ɥ   k/ -&gt; ʞ
+  !/ -&gt; ¡   v/ -&gt; ʌ
+</code></pre>
+<p>Also note that for any digraph, if either of the two characters that
+compose it are not &quot;standard&quot; letters you can find on your keyboard, the
+digraph can be done in reverse order—so since ʀ/ produces ʁ, you can press
+/ again to go back to ʀ in case of accidental flippage (it's also weirdly
+amusing to press RR///////).</p>
+<p>This sometimes makes it easier to enter certain pairs; you may prefer to
+use <code>AA</code> for <code>ɑ</code> and <code>AA/</code> for <code>ɒ</code> instead of the visual <code>o|</code> and <code>|o</code>.</p>
+</li>
+<li>
+<p>Digraphs have also been designed for when a symbol looks like two overlayed
+characters, or two characters next to each other. This includes &quot;hooked&quot;
+letters (such as ŋ), produced with the original letter and a comma, and
+&quot;stroked&quot; letters (such as ɟ), produced with the original letter and a dash:</p>
+<pre><code>  m, -&gt; ɱ   n, -&gt; ŋ   ŋ, -&gt; ɲ
+  v, -&gt; ⱱ   c, -&gt; ç   j, -&gt; ʝ
+  x, -&gt; ɣ   ɣ, -&gt; χ   h, -&gt; ɦ
+  w, -&gt; ɰ
+
+  j- -&gt; ɟ   h- -&gt; ħ   l- -&gt; ɬ
+  i- -&gt; ɨ   u- -&gt; ʉ   e- -&gt; ɘ
+  o- -&gt; ɵ   ʕ- -&gt; ʢ   ?- -&gt; ʡ
+  ʔ- -&gt; ʡ
+
+  LZ -&gt; ɮ   OX -&gt; ɤ   XO -&gt; ɤ
+  OE -&gt; œ   EB -&gt; ɞ   AE -&gt; æ
+  CE -&gt; ɶ   RL -&gt; ɺ   LR -&gt; ɺ
+  ɾl -&gt; ɺ   lɾ -&gt; ɺ
+
+  w| -&gt; ɰ   o/ -&gt; ø   ɜ( -&gt; ɞ
+  /\ -&gt; ʌ   o| -&gt; ɑ   a| -&gt; ɑ
+  |o -&gt; ɒ   |a -&gt; ɒ
+
+  o. -&gt; ʘ   |= -&gt; ǂ   || -&gt; ‖
+  /^ -&gt; ↗   /&gt; -&gt; ↗   \v -&gt; ↘
+  \&gt; -&gt; ↘
+</code></pre>
+</li>
+<li>
+<p>Others are based on pronunciation:</p>
+<pre><code>  PH -&gt; ɸ   BH -&gt; β   TH -&gt; θ
+  DH -&gt; ð   SH -&gt; ʃ   ZH -&gt; ʒ
+  SJ -&gt; ɕ   ZJ -&gt; ʑ   ʃx -&gt; ɧ
+  xʃ -&gt; ɧ
+</code></pre>
+<p>It may be worth noting at this point that digraphs of two lowercase letters
+were intentionally avoided to prevent interference with regular typing. If
+you need to type a sequence without it turning into a digraph (maybe you
+want to type an actual <code>ʃx</code>), place a backslash between the two characters
+(so, type <code>ʃ\x</code>).</p>
+<p>In fact, [backslash][anything] is treated as a digraph that simply resolves
+to the second character.</p>
+</li>
+<li>
+<p>A few digraphs are based on shape:</p>
+<pre><code>  rO -&gt; ɾ   r0 -&gt; ɾ
+  vO -&gt; ʋ   v0 -&gt; ʋ
+</code></pre>
+<p>Another related point: digraphs that contain a lowercase letter can also be
+typed with that letter as uppercase. So, if <code>RO</code> is easier to type than
+<code>rO</code>, that works as well.</p>
+</li>
+<li>
+<p>Retroflex and nonpulmonic symbols have their own categories:</p>
+<pre><code>  retroflex: ) looks like the shape of the tongue
+  t) -&gt; ʈ   d) -&gt; ɖ   n) -&gt; ɳ
+  r) -&gt; ɽ   ɾ) -&gt; ɽ   s) -&gt; ʂ
+  z) -&gt; ʐ   ɹ) -&gt; ɻ   l) -&gt; ɭ
+  ɗ) -&gt; ᶑ
+
+  clicks: clicking noise reminiscent of a *
+  o* -&gt; ʘ   |* -&gt; ǀ   !* -&gt; ǃ
+  =* -&gt; ǁ
+
+  implosives and ejective marker: direction of airflow
+  b( -&gt; ɓ   d( -&gt; ɗ   j( -&gt; ʄ
+  ɟ( -&gt; ʄ   g( -&gt; ɠ   ɢ( -&gt; ʛ
+  ɖ( -&gt; ᶑ
+  ') -&gt; ʼ
+</code></pre>
+</li>
+<li>
+<p>Superscripts and diacritics that go above the letter use <code>^</code>, diacritics that
+go below use <code>_</code>, and miscellaneous &quot;moved&quot; symbols use <code>&lt;</code> or <code>&gt;</code>:</p>
+<pre><code>  ^h -&gt; ʰ   ^n -&gt; ⁿ   ^l -&gt; ˡ
+  ^w -&gt; ʷ   ^j -&gt; ʲ   ^ɥ -&gt; ᶣ
+  ^ʋ -&gt; ᶹ   ^ɣ -&gt; ˠ   ^ʕ -&gt; ˤ
+
+  _| -&gt; ◌̩   ^| -&gt; ◌̍
+  _o -&gt; ◌̥   ^o -&gt; ◌̊
+  _v -&gt; ◌̬   ^v -&gt; ◌̌
+
+  _^ -&gt; ◌̯   _: -&gt; ◌̤   _~ -&gt; ◌̰
+  _[ -&gt; ◌̪   _] -&gt; ◌̺   _{ -&gt; ◌̼
+  _+ -&gt; ◌̟   __ -&gt; ◌̠
+  _) -&gt; ◌̹   _( -&gt; ◌̜
+  _# -&gt; ◌̻   [] -&gt; ◌̻
+
+  ^&gt; -&gt; ◌̚   ^: -&gt; ◌̈   ^x -&gt; ◌̽
+  ^~ -&gt; ◌̃
+
+  -' -&gt; ˔   _˔ -&gt; ◌̝
+  -, -&gt; ˕   _˕ -&gt; ◌̞
+  &lt;| -&gt; ⊣   _⊣ -&gt; ◌̘
+  &gt;| -&gt; ⊢   _⊢ -&gt; ◌̙
+
+  ~~ -&gt; ◌̴   &gt;r -&gt; ˞
+</code></pre>
+<p>Note that all of these sequences can be flipped in order—that is, <code>^h</code>
+produces the same thing as <code>h^</code>. This allows usage such as <code>|&lt;_</code> to produce
+<code>⊣_</code> which becomes ◌̘.</p>
+</li>
+<li>
+<p>Tonal countours use numbers plus <code>|</code>:</p>
+<pre><code>  5| -&gt; ˥   4| -&gt; ˦   3| -&gt; ˧
+  2| -&gt; ˨   1| -&gt; ˩   +| -&gt; ꜛ
+  -| -&gt; ꜜ
+</code></pre>
+</li>
+<li>
+<p>Finally, some digraphs simply have unique mnemonics:</p>
+<pre><code>  ː-  -&gt; ˑ   &quot;chop off&quot; the bottom triangle
+  ((  -&gt; ◌͡◌  two parens for a tie that connects 2 chars
+  ))  -&gt; ◌͜◌
+  ◌͜◌) -&gt; ‿   one more paren to make it a little bit longer
+</code></pre>
+</li>
+</ul>
+
 <!--ENDUSAGE-->
     </body>
 </html>
