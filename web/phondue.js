@@ -15,9 +15,11 @@
     var digraphs = {};
 
     window.addEventListener('load', function() {
+        var phondue = document.getElementById('phondue');
+
         var builderReq = new XMLHttpRequest();
         builderReq.addEventListener('load', function() {
-            document.body.innerHTML += this.responseText;
+            phondue.innerHTML = this.responseText;
             [].slice.call(document.getElementsByTagName('button'))
                     .forEach(function(btn) {
                 btn.addEventListener('click', function() {
@@ -30,7 +32,7 @@
             inputBox.id = 'inputBox';
             inputBox.spellcheck = false;
             inputBox.addEventListener('keypress', keypress);
-            document.body.appendChild(inputBox);
+            phondue.appendChild(inputBox);
         });
         builderReq.open('GET', 'builder.html');
         builderReq.send();
