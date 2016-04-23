@@ -16,11 +16,11 @@ Compile with `make` from the root of the project, and then run by executing the
 
 ## Usage
 
-As seen in the above screenshot, certain symbols of the IPA can be entered by
-clicking on them in the table. However, it is far more efficient to use the
-many keyboard shortcuts that Phondue provides. These are called **digraphs**,
-since they are made up of two letters, and they allow you to type any IPA
-symbol with only a standard keyboard.
+As seen in the above table, certain symbols of the IPA can be entered by
+clicking on them. However, it is far more efficient to use the many keyboard
+shortcuts that Phondue provides. These are called **digraphs**, since they are
+made up of two letters, and they allow you to type any IPA symbol with only a
+standard keyboard.
 
 These symbols were decided to be intuitive as possible:
 
