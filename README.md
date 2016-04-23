@@ -27,22 +27,16 @@ These symbols were decided to be intuitive as possible:
 - Many symbols that look similar to letters of the English alphabet (such as
   small caps) can be produced by doubling the capital letter:
 
-        GG -> ɢ   ?? -> ʔ   NN -> ɴ
-        BB -> ʙ   RR -> ʀ   XX -> χ
-        LL -> ʟ   II -> ɪ   YY -> ʏ
-        UU -> ʊ   EE -> ɛ   OO -> ɞ
-        AA -> ɑ   '' -> ˈ   ,, -> ˌ
-        :: -> ː
+        GG -> ɢ   ?? -> ʔ   NN -> ɴ   BB -> ʙ   RR -> ʀ   XX -> χ
+        LL -> ʟ   II -> ɪ   YY -> ʏ   UU -> ʊ   EE -> ɛ   OO -> ɞ
+        AA -> ɑ   '' -> ˈ   ,, -> ˌ   :: -> ː
 
 - The slash is used to "reflect," "rotate," or otherwise flip around a given
   symbol:
 
-        ʀ/ -> ʁ   ʔ/ -> ʕ   ?/ -> ʕ
-        r/ -> ɹ   y/ -> ʎ   m/ -> ɯ
-        o/ -> ø   e/ -> ə   ɛ/ -> ɜ
-        c/ -> ɔ   a/ -> ɐ   ɑ/ -> ɒ
-        w/ -> ʍ   h/ -> ɥ   k/ -> ʞ
-        !/ -> ¡   v/ -> ʌ
+        ʀ/ -> ʁ   ʔ/ -> ʕ   ?/ -> ʕ   r/ -> ɹ   y/ -> ʎ   m/ -> ɯ
+        o/ -> ø   e/ -> ə   ɛ/ -> ɜ   c/ -> ɔ   a/ -> ɐ   ɑ/ -> ɒ
+        w/ -> ʍ   h/ -> ɥ   k/ -> ʞ   !/ -> ¡   v/ -> ʌ
 
     Also note that for any digraph, if either of the two characters that
     compose it are not "standard" letters you can find on your keyboard, the
@@ -58,35 +52,25 @@ These symbols were decided to be intuitive as possible:
   letters (such as ŋ), produced with the original letter and a comma, and
   "stroked" letters (such as ɟ), produced with the original letter and a dash:
 
-        m, -> ɱ   n, -> ŋ   ŋ, -> ɲ
-        v, -> ⱱ   c, -> ç   j, -> ʝ
-        x, -> ɣ   ɣ, -> χ   h, -> ɦ
-        w, -> ɰ
+        m, -> ɱ   n, -> ŋ   ŋ, -> ɲ   v, -> ⱱ   c, -> ç   j, -> ʝ
+        x, -> ɣ   ɣ, -> χ   h, -> ɦ   w, -> ɰ
 
-        j- -> ɟ   h- -> ħ   l- -> ɬ
-        i- -> ɨ   u- -> ʉ   e- -> ɘ
-        o- -> ɵ   ʕ- -> ʢ   ?- -> ʡ
-        ʔ- -> ʡ
+        j- -> ɟ   h- -> ħ   l- -> ɬ   i- -> ɨ   u- -> ʉ   e- -> ɘ
+        o- -> ɵ   ʕ- -> ʢ   ?- -> ʡ   ʔ- -> ʡ
 
-        LZ -> ɮ   OX -> ɤ   XO -> ɤ
-        OE -> œ   EB -> ɞ   AE -> æ
-        CE -> ɶ   RL -> ɺ   LR -> ɺ
-        ɾl -> ɺ   lɾ -> ɺ
+        LZ -> ɮ   OX -> ɤ   XO -> ɤ   OE -> œ   EB -> ɞ   AE -> æ
+        CE -> ɶ   RL -> ɺ   LR -> ɺ   ɾl -> ɺ   lɾ -> ɺ
 
-        w| -> ɰ   o/ -> ø   ɜ( -> ɞ
-        /\ -> ʌ   o| -> ɑ   a| -> ɑ
+        w| -> ɰ   o/ -> ø   ɜ( -> ɞ   /\ -> ʌ   o| -> ɑ   a| -> ɑ
         |o -> ɒ   |a -> ɒ
 
-        o. -> ʘ   |= -> ǂ   || -> ‖
-        /^ -> ↗   /> -> ↗   \v -> ↘
+        o. -> ʘ   |= -> ǂ   || -> ‖   /^ -> ↗   /> -> ↗   \v -> ↘
         \> -> ↘
 
 - Others are based on pronunciation:
 
-        PH -> ɸ   BH -> β   TH -> θ
-        DH -> ð   SH -> ʃ   ZH -> ʒ
-        SJ -> ɕ   ZJ -> ʑ   ʃx -> ɧ
-        xʃ -> ɧ
+        PH -> ɸ   BH -> β   TH -> θ   DH -> ð   SH -> ʃ   ZH -> ʒ
+        SJ -> ɕ   ZJ -> ʑ   ʃx -> ɧ   xʃ -> ɧ
 
     It may be worth noting at this point that digraphs of two lowercase letters
     were intentionally avoided to prevent interference with regular typing. If
@@ -99,8 +83,7 @@ These symbols were decided to be intuitive as possible:
 
 - A few digraphs are based on shape:
 
-        rO -> ɾ   r0 -> ɾ
-        vO -> ʋ   v0 -> ʋ
+        rO -> ɾ   r0 -> ɾ   vO -> ʋ   v0 -> ʋ
 
     Another related point: digraphs that contain a lowercase letter can also be
     typed with that letter as uppercase. So, if `RO` is easier to type than
@@ -109,44 +92,30 @@ These symbols were decided to be intuitive as possible:
 - Retroflex and nonpulmonic symbols have their own categories:
 
         retroflex: ) looks like the shape of the tongue
-        t) -> ʈ   d) -> ɖ   n) -> ɳ
-        r) -> ɽ   ɾ) -> ɽ   s) -> ʂ
-        z) -> ʐ   ɹ) -> ɻ   l) -> ɭ
-        ɗ) -> ᶑ
+        t) -> ʈ   d) -> ɖ   n) -> ɳ   r) -> ɽ   ɾ) -> ɽ   s) -> ʂ
+        z) -> ʐ   ɹ) -> ɻ   l) -> ɭ   ɗ) -> ᶑ
 
         clicks: clicking noise reminiscent of a *
-        o* -> ʘ   |* -> ǀ   !* -> ǃ
-        =* -> ǁ
+        o* -> ʘ   |* -> ǀ   !* -> ǃ   =* -> ǁ
 
         implosives and ejective marker: direction of airflow
-        b( -> ɓ   d( -> ɗ   j( -> ʄ
-        ɟ( -> ʄ   g( -> ɠ   ɢ( -> ʛ
-        ɖ( -> ᶑ
-        ') -> ʼ
+        b( -> ɓ   d( -> ɗ   j( -> ʄ   ɟ( -> ʄ   g( -> ɠ   ɢ( -> ʛ
+        ɖ( -> ᶑ   ') -> ʼ
 
 - Superscripts and diacritics that go above the letter use `^`, diacritics that
   go below use `_`, and miscellaneous "moved" symbols use `<` or `>`:
 
-        ^h -> ʰ   ^n -> ⁿ   ^l -> ˡ
-        ^w -> ʷ   ^j -> ʲ   ^ɥ -> ᶣ
+        ^h -> ʰ   ^n -> ⁿ   ^l -> ˡ   ^w -> ʷ   ^j -> ʲ   ^ɥ -> ᶣ
         ^ʋ -> ᶹ   ^ɣ -> ˠ   ^ʕ -> ˤ
 
-        _| -> ◌̩   ^| -> ◌̍
-        _o -> ◌̥   ^o -> ◌̊
-        _v -> ◌̬   ^v -> ◌̌
+        _| -> ◌̩   ^| -> ◌̍   _o -> ◌̥   ^o -> ◌̊   _v -> ◌̬   ^v -> ◌̌
 
-        _^ -> ◌̯   _: -> ◌̤   _~ -> ◌̰
-        _[ -> ◌̪   _] -> ◌̺   _{ -> ◌̼
-        _+ -> ◌̟   __ -> ◌̠
-        _) -> ◌̹   _( -> ◌̜
-        _# -> ◌̻   [] -> ◌̻
+        _^ -> ◌̯   _: -> ◌̤   _~ -> ◌̰   _[ -> ◌̪   _] -> ◌̺   _{ -> ◌̼
+        _+ -> ◌̟   __ -> ◌̠   _) -> ◌̹   _( -> ◌̜   _# -> ◌̻   [] -> ◌̻
 
-        ^> -> ◌̚   ^: -> ◌̈   ^x -> ◌̽
-        ^~ -> ◌̃
+        ^> -> ◌̚   ^: -> ◌̈   ^x -> ◌̽   ^~ -> ◌̃
 
-        -' -> ˔   _˔ -> ◌̝
-        -, -> ˕   _˕ -> ◌̞
-        <| -> ⊣   _⊣ -> ◌̘
+        -' -> ˔   _˔ -> ◌̝   -, -> ˕   _˕ -> ◌̞   <| -> ⊣   _⊣ -> ◌̘
         >| -> ⊢   _⊢ -> ◌̙
 
         ~~ -> ◌̴   >r -> ˞
@@ -157,9 +126,8 @@ These symbols were decided to be intuitive as possible:
 
 - Tonal countours use numbers plus `|`:
 
-        5| -> ˥   4| -> ˦   3| -> ˧
-        2| -> ˨   1| -> ˩   +| -> ꜛ
-        -| -> ꜜ
+        5| -> ˥   4| -> ˦   3| -> ˧   2| -> ˨   1| -> ˩
+        +| -> ꜛ   -| -> ꜜ
 
 - Finally, some digraphs simply have unique mnemonics:
 
