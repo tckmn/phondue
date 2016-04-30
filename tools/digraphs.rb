@@ -39,6 +39,7 @@ data = '
 
     {{ superscripts (TODO: add more nasal and lateral releases) }}
     ^hʰ ^nⁿ ^lˡ ^wʷ ^jʲ ^ɥᶣ ^ʋᶹ ^ɣˠ ^ʕˤ
+    ^mᵐ ^ŋᵑ
 
     {{ suprasegmentals }}
     \'\'ˈ ,,ˌ ::ː ː-ˑ ^ŭ_u̮ ͜)‿
