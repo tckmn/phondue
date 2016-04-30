@@ -105,8 +105,8 @@ These symbols were decided to be intuitive as possible:
 - Superscripts and diacritics that go above the letter use `^`, diacritics that
   go below use `_`, and miscellaneous "moved" symbols use `<` or `>`:
 
-        ^h -> ʰ   ^n -> ⁿ   ^l -> ˡ   ^w -> ʷ   ^j -> ʲ   ^ɥ -> ᶣ
-        ^ʋ -> ᶹ   ^ɣ -> ˠ   ^ʕ -> ˤ
+        ^h -> ʰ   ^n -> ⁿ   ^m -> ᵐ   ^ŋ -> ᵑ   ^l -> ˡ   ^w -> ʷ
+        ^j -> ʲ   ^ɥ -> ᶣ   ^ʋ -> ᶹ   ^ɣ -> ˠ   ^ʕ -> ˤ
 
         _| -> ◌̩   ^| -> ◌̍   _o -> ◌̥   ^o -> ◌̊   _v -> ◌̬   ^v -> ◌̌
 
