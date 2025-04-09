@@ -1,4 +1,4 @@
-# [Phondue](http://keyboardfire.com/phondue-web/)
+# [Phondue](https://tck.mn/phondue-web/)
 
 *An IPA entry tool so good, it's delicious*
 
@@ -7,7 +7,7 @@
 Phondue (pronounced /fɔ̃dy/) is a tool for input of IPA symbols with the primary
 goal of being intuitive and easy to use.
 
-[**Try Phondue in your browser here!**](http://keyboardfire.com/phondue-web/)
+[**Try Phondue in your browser here!**](https://tck.mn/phondue-web/)
 
 Compile with `make` from the root of the project, and then run by executing the
 `phondue` helper script.
